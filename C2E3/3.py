@@ -3,5 +3,5 @@ if var == "Panda":
     print("cute!!")
 elif var == "Panda":
     print ("regal!")
-else
+else:
     print("Ugly ..")
