@@ -15,11 +15,13 @@ while userIn != "c" or "C":
     elif userIn == "l" or userIn == "L":
        #what happens if lower
         high = userN
-        print(f"this is l test output {userN}")
+        userN = userN
+        print(f"this is l test output {userN} low: {low} high: {high}")
     elif userIn == "h" or userIn == "H":
         #what happens if higher
         low = userN
-        print(f"this is h test output {userN}")
+        userN = userN
+        print(f"this is h test output {userN} low: {low} high: {high}")
 
     else:
         print("I am sorry please enter h if your number is higher, l if your number is lower, c if the number is correct")
