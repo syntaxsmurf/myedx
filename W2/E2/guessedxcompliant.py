@@ -26,4 +26,4 @@ while userIn != "c" or "C":
     else:
         print("I am sorry please enter h if your number is higher, l if your number is lower, c if the number is correct")
 
-print(f"Secret number is" , userC)
+print("Secret number is" + str(userC))
