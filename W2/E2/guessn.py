@@ -1,24 +1,27 @@
 low = 0
 high = 100
-userN = low + high / 2
+userN = abs(int(low + high / 2))
 userC = ""
+userIn = ""
 
 print(f"Please think of a number between {low} and {high}")
-print("please enter h if your number is higher l if your number is lower c if the number is correct")
+print("please enter h if your number is higher, l if your number is lower, c if the number is correct")
 
-while userN != "c" or "C":
+while userIn != "c" or "C":
     userIn = input(f"Is your secret number {userN}?:")
     if userIn == "c" or userIn == "C":
         userC = userN
         break
     elif userIn == "l" or userIn == "L":
        #what happens if lower
-        print("l")
+        high = userN
+        print(f"this is l test output {userN}")
     elif userIn == "h" or userIn == "H":
         #what happens if higher
-        print("h")
+        low = userN
+        print(f"this is h test output {userN}")
 
     else:
-        print("I am sorry please select l for lower or h for higher or c if it's the correct number")
+        print("I am sorry please enter h if your number is higher, l if your number is lower, c if the number is correct")
 
 print(f"your number is {userC}")
