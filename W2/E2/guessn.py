@@ -1,6 +1,6 @@
 low = 0
 high = 100
-userN = abs(int((low + high / 2)))
+userN = abs(int((low + high) / 2))
 userC = ""
 userIn = ""
 
@@ -15,12 +15,12 @@ while userIn != "c" or "C":
     elif userIn == "l" or userIn == "L":
        #what happens if lower
         high = userN
-        userN = abs(int((low + high / 2)))
+        userN = abs(int((low + high) / 2))
         print(f"this is l test output {userN} low: {low} high: {high}")
     elif userIn == "h" or userIn == "H":
         #what happens if higher
         low = userN
-        userN = abs(int((low + high / 2)))
+        userN = abs(int((low + high) / 2))
         print(f"this is h test output {userN} low: {low} high: {high}")
 
     else:
